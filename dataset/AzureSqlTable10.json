@@ -1,0 +1,83 @@
+{
+	"name": "AzureSqlTable10",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase10",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "InvoiceID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ClientID",
+				"type": "varchar"
+			},
+			{
+				"name": "InvoiceNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "IssueDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "DueDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "PaidDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "SubTotal",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TaxAmount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TotalAmount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "PaidAmount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			},
+			{
+				"name": "PaymentMethod",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_invoices"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

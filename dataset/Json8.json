@@ -1,0 +1,19 @@
+{
+	"name": "Json8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer8",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Diwanbhoomika/pipeline/refs/heads/main/sales.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

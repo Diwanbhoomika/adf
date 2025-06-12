@@ -1,0 +1,55 @@
+{
+	"name": "AzureSqlTable6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SupplierID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "RegionID",
+				"type": "varchar"
+			},
+			{
+				"name": "SupplierName",
+				"type": "varchar"
+			},
+			{
+				"name": "ContactPerson",
+				"type": "varchar"
+			},
+			{
+				"name": "EstablishedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "CreditRating",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 1
+			},
+			{
+				"name": "IsActive",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_suppliers"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

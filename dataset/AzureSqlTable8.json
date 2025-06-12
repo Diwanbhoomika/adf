@@ -1,0 +1,69 @@
+{
+	"name": "AzureSqlTable8",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase8",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "SalesID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "SalesPersonID",
+				"type": "varchar"
+			},
+			{
+				"name": "TerritoryID",
+				"type": "varchar"
+			},
+			{
+				"name": "SalesDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "GrossSales",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Discount",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "NetSales",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Commission",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_sales"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

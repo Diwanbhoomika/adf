@@ -1,0 +1,47 @@
+{
+	"name": "AzureSqlTable5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase5",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "EmployeeID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DepartmentID",
+				"type": "varchar"
+			},
+			{
+				"name": "EmployeeName",
+				"type": "varchar"
+			},
+			{
+				"name": "HireDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "Salary",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_employees"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

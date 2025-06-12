@@ -1,0 +1,19 @@
+{
+	"name": "Json7",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer7",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Diwanbhoomika/pipeline/refs/heads/main/inventory.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

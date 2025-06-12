@@ -1,0 +1,19 @@
+{
+	"name": "Json5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer5",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Diwanbhoomika/pipeline/refs/heads/main/employees.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

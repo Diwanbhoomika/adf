@@ -1,0 +1,75 @@
+{
+	"name": "AzureSqlTable9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase9",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ShipmentID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "CarrierID",
+				"type": "varchar"
+			},
+			{
+				"name": "TrackingNumber",
+				"type": "varchar"
+			},
+			{
+				"name": "OriginLocation",
+				"type": "varchar"
+			},
+			{
+				"name": "DestinationLocation",
+				"type": "varchar"
+			},
+			{
+				"name": "ShipDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "EstimatedDelivery",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "ActualDelivery",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "Weight",
+				"type": "decimal",
+				"precision": 8,
+				"scale": 2
+			},
+			{
+				"name": "ShippingCost",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "Status",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_shipments"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

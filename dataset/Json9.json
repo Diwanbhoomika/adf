@@ -1,0 +1,19 @@
+{
+	"name": "Json9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer9",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Diwanbhoomika/pipeline/refs/heads/main/shipments.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

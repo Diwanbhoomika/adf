@@ -1,0 +1,19 @@
+{
+	"name": "Json6",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer6",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "Diwanbhoomika/pipeline/refs/heads/main/suppliers.json"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

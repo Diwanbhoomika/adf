@@ -1,0 +1,65 @@
+{
+	"name": "AzureSqlTable7",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase7",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "InventoryID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WarehouseID",
+				"type": "varchar"
+			},
+			{
+				"name": "ItemCode",
+				"type": "varchar"
+			},
+			{
+				"name": "ItemName",
+				"type": "varchar"
+			},
+			{
+				"name": "Category",
+				"type": "varchar"
+			},
+			{
+				"name": "StockQuantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ReorderLevel",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "UnitCost",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "LastRestockDate",
+				"type": "datetime2",
+				"scale": 7
+			},
+			{
+				"name": "UpdatedDate",
+				"type": "datetime2",
+				"scale": 7
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "temp_inventory"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
