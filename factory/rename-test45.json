@@ -1,0 +1,9 @@
+{
+	"name": "rename-test45",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "92c47843-a9f6-4516-8ce9-f0ebc12c5aa2",
+		"tenantId": "3c384b5b-7961-47fd-8f4c-f11f12a03d15"
+	}
+}
