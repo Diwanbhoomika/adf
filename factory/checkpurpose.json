@@ -1,0 +1,9 @@
+{
+	"name": "checkpurpose",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8e2cdf3f-6123-4244-9abe-8b706db9e143",
+		"tenantId": "3c384b5b-7961-47fd-8f4c-f11f12a03d15"
+	}
+}
