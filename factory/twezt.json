@@ -1,0 +1,9 @@
+{
+	"name": "twezt",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a4ee4cb3-a5bc-43d1-b678-4d6972ea2c4c",
+		"tenantId": "3c384b5b-7961-47fd-8f4c-f11f12a03d15"
+	}
+}
